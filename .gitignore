@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code settings
+.vscode/
+
+# Spark / logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
