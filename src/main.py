@@ -5,7 +5,7 @@ spark = (
     .master("local[*]") \
     .appName("SmokeTest") \
     .config("spark.eventLog.enabled","true") \
-    .config("spark.eventLog.dir","file:///c:/spark-events")
+    .config("spark.eventLog.dir","file:///c:/spark-events") \
     .getOrCreate()
 )
 
