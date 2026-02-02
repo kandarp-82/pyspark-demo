@@ -1,9 +1,13 @@
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder \
+spark = (
+    SparkSession.builder \
     .master("local[*]") \
     .appName("SmokeTest") \
+    .config("spark.eventLog.enabled","true") \
+    .config("spark.eventLog.dir","file:///c:/spark-events") \
     .getOrCreate()
+)
 
 print("Spark version:", spark.version)
 
