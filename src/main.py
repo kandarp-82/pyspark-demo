@@ -8,5 +8,7 @@ spark = SparkSession.builder \
 print("Spark version:", spark.version)
 
 spark.range(10).show()
+print("Running feature branch: add-logging")
+spark.range(20).show(5)
 
 spark.stop()
