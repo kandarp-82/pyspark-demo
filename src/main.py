@@ -11,6 +11,8 @@ spark = (
 
 print("Spark version:", spark.version)
 
-spark.range(10).show()
-print("Running feature branch: add-logging")
+df = spark.read.json("data/raw/2015-summary.json")
+print("The count in the json file is:", df.count())
+
+
 spark.stop()
