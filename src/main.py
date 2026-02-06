@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 spark = (
     SparkSession.builder \
     .master("local[*]") \
-    .appName("SmokeTest") \
+    .appName("sparklearning") \
     .config("spark.eventLog.enabled","true") \
     .config("spark.eventLog.dir","file:///c:/spark-events") \
     .getOrCreate()
